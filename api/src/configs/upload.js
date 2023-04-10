@@ -8,7 +8,7 @@ const UPLOADS_FOLDER = path.resolve(__dirname, 'uploads');
 const MULTER = {
   storage: multer.diskStorage({
     destination: TMP_FOLDER,
-    filename(resquest, file, callback){
+    filename(request, file, callback){
       const fileHash = crypto.randomBytes(10).toString("hex");
       const filename = `${fileHash}-${file.originalname}`;
 
