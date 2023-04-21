@@ -3,6 +3,7 @@ import { Container, Profile , Logout } from './style'
 
 import { useAuth } from '../../hooks/auth';
 import { api } from '../../services/api';
+import avatarPlaceholder from '../../assets/avatar_placeholder.svg'
 
 import { Link } from "react-router-dom";
 
